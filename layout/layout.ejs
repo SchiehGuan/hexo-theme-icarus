@@ -24,9 +24,7 @@
             <div class="columns">
                 <div class="column <%= main_column_class() %> has-order-2 column-main"><%- body %></div>
                 <%- partial('common/widget', { position: 'left' }) %>
-                <% if(!is_post()){ %>
-                    <%- partial('common/widget', { position: 'right' }) %>
-                <% } %>
+                <%- partial('common/widget', { position: 'right' }) %>
             </div>
         </div>
     </section>
